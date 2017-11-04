@@ -25,19 +25,19 @@ Feedback on the proposed mapping using the issues tracker is most welcome!
 
 ### MeasurementOrFact :: http://rs.gbif.org/extension/dwc/measurements_or_facts.xml
 * measurementID = boldAPI:processid
-* measurementType = "BOLD-sequence" [alt. = "BOLD-sequence (_markercode_)"]
+* measurementType = "BOLD-sequence" _[alt. = BOLD-sequence + (_markercode_)]_
 * measurementValue = boldAPI:nucleotides
 * measurementAccuracy = NULL
 * measurementUnit = NULL
 * measurementDeterminedDate = boldAPI:run_dates
 * measurementDeterminedBy = boldAPI:sequencing_centers
-* measurementMethod = boldAPI:markercode  [alt. = boldAPI:seq_primers]
-* measurementRemarks = http://www.boldsystems.org/index.php/API_Public/sequence?ids=_processid_
+* measurementMethod = boldAPI:markercode  _[alt. = boldAPI:seq_primers]_
+* measurementRemarks = http://www.boldsystems.org/index.php/API_Public/sequence?ids= + _processid_
 
 ### Simple Multimedia :: http://rs.gbif.org/extension/gbif/1.0/multimedia.xml
 * type = "StillImage"
 * format = "image/jpeg"
-* identifier = http://www.boldsystems.org/pics/NOBAS/MY1_0568+1408457242.JPG
+* identifier = boldAPI:image_urls
 * references
 * title = occurrenceID [alt. = processID]
 * description = boldAPI:captions
