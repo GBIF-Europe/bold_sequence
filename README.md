@@ -19,9 +19,10 @@ The most reliable specimen identifier in GBIF is the [dwc:occurrenceID](http://r
 * GBIF URL: https://www.gbif.org/occurrence/1426521030 
 * GBIF API: http://api.gbif.org/v1/occurrence/1426521030/verbatim 
 
-## Mapping from BOLD API to GBIF IPT
 
-Feedback on the proposed mapping using the issues tracker is most welcome!
+# Mapping from BOLD API to GBIF IPT
+
+Feedback on the proposed mapping using the issues tracker is most welcome! What would be the appropriate **measurementType** and **measurementMethod**?
 
 ### MeasurementOrFact :: http://rs.gbif.org/extension/dwc/measurements_or_facts.xml
 * measurementID = boldAPI:processid
