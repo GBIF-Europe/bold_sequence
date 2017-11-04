@@ -1,13 +1,9 @@
 # BOLD DNA sequence
 Linking BOLD DNA sequences to specimens published in GBIF
 
-Linking barcode data from BOLD to specimens in GBIF has a high priority in the current GBIF work-plan. The GBIF Science Committee (represented by chair Rod Page) published in December 2016 a snapshot of the iBOL dataset (doi:10.15468/inygc6) including a total of 2,789,906 occurrences. However, the link to the museum specimens themselves was not maintained.
+Linking DNA sequence barcode data from BOLD to specimens in GBIF has a high priority in the GBIF work-plan. The [GBIF Science Committee](https://www.gbif.org/contact-us/directory?group=scienceCommittee) represented by SC chair Rod Page, [published in December 2016](http://iphylo.blogspot.no/2016/12/dna-barcoding-taxonomy-now-in-gbif.html) a [snapshot](https://github.com/rdmpage/ibol-dwca) of the iBOL dataset [doi:10.15468/inygc6](http://doi.org/10.15468/inygc6) including a total of 2,789,906 occurrences. However, the link to the museum specimens themselves has not been maintained. Example: [gbifKey:1415958347](https://www.gbif.org/occurrence/1415958347 "GBIF iBOL 2016 dataset occurrence record") and the corresponding BOLD data record with [processid:LON2542-15](http://bins.boldsystems.org/index.php/Public_RecordView?processid=LON2542-15 "BOLD processid=LON2542-15").
 
-### Examples from the GBIF iBOL 2016 dataset:
-* GBIF iBOL occurrence record: https://www.gbif.org/occurrence/1415958347
-* BOLD data record: http://bins.boldsystems.org/index.php/Public_RecordView?processid=LON2542-15
-
-The most reliable specimen identifier in GBIF is the dwc:occurrenceID. There is also the traditional and (more) human readable dwc:catalogNumber identifying a museum specimen. The BOLD Process ID is the most important identifier for material samples corresponding to the museum specimens. BOLD also provide a "Museum ID" and a "Sample ID" however, nether match exactly the occurrenceID or the catalogNumber in GBIF.
+The most reliable specimen identifier in GBIF is the [dwc:occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID). There is also the traditional and (more) human readable [dwc:catalogNumber](http://rs.tdwg.org/dwc/terms/catalogNumber) identifying a museum specimen. The [BOLD Process ID](http://www.boldsystems.org/index.php/resources/boldfaq#reg1) is the most important identifier for material samples corresponding to the museum specimens. BOLD also provide a "Museum ID" and a "Sample ID" however, nether match exactly the occurrenceID or the catalogNumber in GBIF.
 
 
 | GBIF                                 | BOLD                     |
@@ -16,14 +12,12 @@ The most reliable specimen identifier in GBIF is the dwc:occurrenceID. There is 
 | occurrenceID = urn:catalog:O:F:75130 | Museum ID = O-F-75130    |
 | catalogNumber = 75130                | Sample ID = O-F-75130    |
 | eventID/fieldNumber = [blank]        | Field ID = MY1-0568      |
-| GBIF API: 1426521030                 | BOLD API: NOBAS010-14    |
 
+* BOLD URL: http://bins.boldsystems.org/index.php/Public_RecordView?processid=NOBAS010-14 
+* BOLD API: http://www.boldsystems.org/index.php/API_Public/sequence?ids=NOBAS010-14 
 
-* URL: http://bins.boldsystems.org/index.php/Public_RecordView?processid=NOBAS010-14 
-* API: http://www.boldsystems.org/index.php/API_Public/sequence?ids=NOBAS010-14 
-
-* URL: https://www.gbif.org/occurrence/1426521030 
-* API: http://api.gbif.org/v1/occurrence/1426521030/verbatim 
+* GBIF URL: https://www.gbif.org/occurrence/1426521030 
+* GBIF API: http://api.gbif.org/v1/occurrence/1426521030/verbatim 
 
 ## Mapping from BOLD API to GBIF IPT
 
@@ -40,7 +34,7 @@ Feedback on the proposed mapping using the issues tracker is most welcome!
 * measurementMethod = boldAPI:markercode  [alt. = boldAPI:seq_primers]
 * measurementRemarks = http://www.boldsystems.org/index.php/API_Public/sequence?ids=_processid_
 
-## Simple Multimedia :: http://rs.gbif.org/extension/gbif/1.0/multimedia.xml
+### Simple Multimedia :: http://rs.gbif.org/extension/gbif/1.0/multimedia.xml
 * type = "StillImage"
 * format = "image/jpeg"
 * identifier = http://www.boldsystems.org/pics/NOBAS/MY1_0568+1408457242.JPG
